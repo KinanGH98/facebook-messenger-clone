@@ -1,0 +1,43 @@
+* {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+html {
+    color: rgba(255, 255, 255, 0.87);
+    color-scheme: light dark;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+}
+
+.backgroundSVG {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -500;
+    opacity: 0.5;
+}
+
+/* Hide the svg background on mobile. */
+@media screen and (max-width: 1000px) {
+    .backgroundSVG {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+#root {
+    margin: auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #242424;
+    box-shadow: rgba(0, 0, 0, 0.7) 0 0 25px;
+}

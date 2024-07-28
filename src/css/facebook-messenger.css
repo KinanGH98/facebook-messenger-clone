@@ -1,0 +1,52 @@
+:root {
+    --itemHoverBGC: #363636;
+    --item2HoverBGC: #4d4d4d;
+    --itemSelectedBGC: #1e1e1e;
+    --itemBorderRadius: 25px;
+}
+
+.bottomNavBar {
+    background-color: rgba(36, 36, 36);
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    max-width: inherit;
+    width: inherit;
+}
+
+.bottomNavBarButton,
+.bottomNavBarSelectedButton {
+    aspect-ratio: 1;
+    width: 75px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border-radius: var(--itemBorderRadius);
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Keep this selector bellow the selector above. */
+.bottomNavBarSelectedButton {
+    color: #646cff;
+}
+
+.bottomNavBarButton:hover,
+.bottomNavBarSelectedButton:hover {
+    background-color: var(--itemHoverBGC);
+}
+
+.bottomNavBarButton:active,
+.bottomNavBarSelectedButton:active {
+    background-color: var(--itemSelectedBGC);
+}
+
+.bottomNavBar h5 {
+    margin: 0;
+}

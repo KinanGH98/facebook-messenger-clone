@@ -1,0 +1,80 @@
+﻿.circularButton {
+    aspect-ratio: 1;
+    border-radius: 50px;
+    width: 45px;
+    border: none;
+    background-color: var(--itemHoverBGC);
+    color: inherit;
+}
+
+.circularButton:hover {
+    background-color: var(--item2HoverBGC);
+}
+
+.circularButton:active {
+    background-color: var(--itemSelectedBGC);
+}
+
+.appBar {
+    display: flex;
+}
+
+.appBar > h1 {
+    margin: 0 25px;
+}
+
+.sideBar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 100000;
+}
+
+.sideBarToggleDiv {
+    background-color: rgba(255, 255, 255, 0.09);
+    width: 25%;
+    margin: 0;
+    backdrop-filter: blur(10px);
+}
+
+.sideBarContent {
+    padding: 15px;
+    background-color: #242424;
+    width: 75%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sideBarHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.sideBarHeader > img {
+    aspect-ratio: 1;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.sideBarItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap;
+}
+
+.sideBarItemIcon {
+    background-color: #363636;
+    padding: 15px;
+    border-radius: 15px;
+}
